@@ -1,0 +1,5 @@
+*pycache*
+*.env
+*.egg-info
+dist
+*.lfind_cache

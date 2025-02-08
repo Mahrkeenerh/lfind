@@ -1,0 +1,20 @@
+{
+    "max_entries": 100,
+    "ignore_patterns": [
+        ".*"
+    ],
+    "include_empty_dirs": false,
+    "cache_dir": ".lfind_cache",
+    "meta_cache": "meta_cache.json",
+    "cache_validity_days": 7,
+    "llm_default": {
+        "provider": "ollama",
+        "model": "qwen2.5:14b-instruct-q6_K",
+        "api_base": "http://localhost:11434/v1"
+    },
+    "llm_hard": {
+        "provider": "openai",
+        "model": "gpt-4o",
+        "api_base": null
+    }
+}
