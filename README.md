@@ -2,6 +2,10 @@
 
 A natural language file finder using LLMs. This tool allows you to search for files using natural language queries, powered by large language models. Simply describe what you're looking for, and lfind will help you locate the relevant files.
 
+### Privacy Warning
+
+If you are using OpenAI models (or any other 3rd party models), be aware of the potential privacy implications. The model provider may have access to your queries and the files you are searching for. If you are concerned about privacy, consider using local models like Ollama or other privacy-preserving alternatives only.
+
 ## Installation
 
 ```bash
