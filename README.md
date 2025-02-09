@@ -56,19 +56,19 @@ setx OPENAI_API_KEY your_api_key_here     # Windows
 lfind "First invoice of 2025"
 
 # Search with specific file extensions
-lfind -e pdf docx "presentation on attention mechanisms"
+lfind "presentation on attention mechanisms" -e pdf docx
 
 # Search in specific directory
-lfind -d /path/to/dir "log files from last week"
+lfind "log files from last week" -d /path/to/dir
 
 # Use more powerful LLM model (e.g., GPT-4o)
-lfind -H "files related to database migrations"
+lfind "files related to database migrations" -H
 
 # Ignore default ignore patterns (ommiting . (dot) files)
-lfind --ignore-defaults "configuration files"
+lfind "configuration files" --ignore-defaults
 
 # Add custom ignore patterns
-lfind -i "*.tmp" "*.bak" "important documents"
+lfind "important documents" -i "*.tmp" "*.bak"
 ```
 
 ### Additional Options

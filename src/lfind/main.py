@@ -10,7 +10,7 @@ from . import tree_builder
 
 
 # Version information
-__version__ = "0.1.0"
+__version__ = "0.1.1"
 __author__ = "Mahrkeenerh"
 __description__ = "Natural language file search tool with LLM support"
 
