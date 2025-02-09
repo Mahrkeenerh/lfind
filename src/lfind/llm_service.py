@@ -54,17 +54,19 @@ class LLMService:
 
     def create_search_prompt(self, query: str, file_list: List[str]) -> str:
         """Create a prompt for file search."""
-        return f"""Given the following list of files:
+        file_list_str = '\n'.join(file_list)
+        prompt_template = """Given the following list of files:
 
-{'\n'.join(file_list)}
+{}
 
-Find files that best match this search query: "{query}"
+Find files that best match this search query: "{}"
 
 Instructions:
 - Return ONLY the matching filenames, one per line
 - Do not include any explanations or additional text
 - Do not include directory structures or absolute paths
 - If no files match, return an empty response"""
+        return prompt_template.format(file_list_str, query)
 
     def search_files(self, query: str, file_list: List[str], use_hard_model: bool = False) -> List[str]:
         """Search for files using LLM."""
