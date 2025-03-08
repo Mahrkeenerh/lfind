@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "lfind"
-version = "0.1.0"
+version = "0.2.0"
 description = "A natural language file finder using LLMs"
 authors = [
     {name = "Samuel Buban", email = "samuelbuban@gmail.com"}
@@ -25,6 +25,9 @@ classifiers = [
 dependencies = [
     "openai>=1.61.1",
     "python-dotenv>=1.0.1",
+    "faiss-cpu>=1.7.0",
+    "sentence-transformers>=2.2.0",
+    "PyPDF2>=3.0.0",  # For PDF text extraction
 ]
 
 [project.urls]
